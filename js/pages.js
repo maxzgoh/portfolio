@@ -1,16 +1,3 @@
-//ARROW ANIMATION
-
-$('.container').on('mouseenter', function() {
-  $('.button-fill').addClass('arrow-active');
-  $('.button-fill').addClass('arrow-bounce');
-});
-
-$('.container').on('mouseleave', function() {
-  $('.button-fill').removeClass('arrow-active');
-  $('.button-fill').removeClass('arrow-bounce');
-});
-
-
 // SIDEBAR- HOVER ON ANCHORS
 
 $('nav a').on('mouseenter', function() {
@@ -22,8 +9,6 @@ $('nav a').on('mouseleave', function() {
   $('nav a').removeClass('nav-a-hover');
 });
 
-
-
 // TOGGLE NAV WHEN CLICKING HAMBURGER
 
 $('#hamburger-menu').on('click', function() {
@@ -31,7 +16,6 @@ $('#hamburger-menu').on('click', function() {
   $('section').toggleClass('scale');
   $(this).toggleClass("is-active");
 });
-
 
 // EXIT SIDEBAR BY CLICKING OUTSIDE MENU
 
@@ -47,18 +31,15 @@ $(document).mouseup(function(e) {
   }
 });
 
-
 // OVERLAY
 $('.container').on('mouseover', function() {
-  $(this).addClass('transition-left');
+  $('.overlay').addClass('transition-left');
 });
 $('.container').on('mouseout', function() {
-  $(this).removeClass('transition-left');
+  $('.overlay').removeClass('transition-left');
 });
 
 // SMOOTH SCROLL
-
-
 $('.down-arrow').on('click', function(e) {
   // prevent the standard link operation on click
   e.preventDefault();

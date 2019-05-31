@@ -156,7 +156,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  padding-top: 210px;
+  padding-top: 300px;
   padding-left: 8%;
   transition: all cubic-bezier(0.2, 0.8, 0.2, 1) 1.2s;
   z-index: 90;

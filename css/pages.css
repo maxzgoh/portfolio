@@ -17,13 +17,11 @@ a {
   -webkit-font-smoothing: antialiased;
   font-family: 'Vidaloka', serif;
   color: black;
-  font-weight: 200;
 }
 
-p,
-ul,
-li {
+p, ul, ol, li {
   font-family: 'Assistant', sans-serif;
+  color: #999999;
 }
 
 img {
@@ -40,17 +38,74 @@ img {
 }
 
 /* ----------------------------------------
-FADE-INS
+TYPOGRAPHY
 ------------------------------------------- */
-.logo, .hamburger {
-  animation: fadein 2s;
+.section-2 h1,
+.section-2 h2,
+.section-2 h3,
+.section-2 ul,
+.section-2 p,
+.section-2 ol {
+  font-weight: 300;
+  margin-left: 130px;
+}
+
+.section-2 p,
+.section-2 ul,
+.section-2 ol {
+  margin-right: 130px;
+}
+
+.section-2 h1 {
+  font-size: 20px;
+  margin-top: 140px;
+}
+
+.section-2 h2 {
+  font-size: 68px;
+  padding-top: 100px;
+}
+
+.section-2 h3 {
+  font-size: 40px;
 }
 
 /* ----------------------------------------
-HEADER
+IMAGES
 ------------------------------------------- */
-header {
-  margin-top: 0;
+#tgf_laptop {
+  position: absolute;
+  width: 60%;
+  top: 108%;
+  right: 5%;
+}
+
+#tgf_iphone {
+  position: absolute;
+  width: 10%;
+  top: 150%;
+  right: 9%;
+}
+
+#tgf_ca {
+  position: absolute;
+  width: 35%;
+  top: 196%;
+  left: 124px;
+}
+
+#tgf_sitemap, #tgf_flowchart {
+  width: 40%;
+  top: 0%;
+  margin-left: 180px;
+  margin-top: 40px;
+}
+
+/* ----------------------------------------
+FADE-INS
+------------------------------------------- */
+.logo, .text-wrapper, .icon {
+  animation: fadein 2s;
 }
 
 /* ----------------------------------------
@@ -61,7 +116,6 @@ TOP BAR
   background-color: white;
   width: 100%;
   z-index: 12;
-  top: 0;
 }
 
 /* ----------------------------------------
@@ -105,7 +159,7 @@ HAMBURGER ICON
   position: fixed;
   right: 30px;
   top: 20px;
-  z-index: 2000000;
+  z-index: 1000000;
 }
 
 .hamburger:hover {
@@ -222,7 +276,7 @@ nav li {
 /* ----------------------------------------
 SECTIONS
 ------------------------------------------- */
-section {
+#section-1 {
   position: relative;
   display: flex;
   align-items: center;
@@ -233,6 +287,68 @@ section {
   overflow: hidden;
 }
 
+section h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.title {
+  position: absolute;
+  font-size: 22px;
+  top: 20%;
+  left: 10%;
+}
+
+section p {
+  color: #999999;
+  font-weight: 300;
+  margin-top: 0;
+  padding-left: 3px;
+}
+
+.scale {
+  transform: scale(0.9);
+}
+
+.section-3 {
+  /* position: relative; */
+  background-color: #F9BA00;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.section-3 p,
+.section-3 li {
+  color: white;
+}
+
+section {
+  height: 100vh;
+}
+
+.section-4 {
+  position: relative;
+}
+
+.section-5 {
+  background-color: #F9BA00;
+  padding-top: 40px;
+}
+
+.section-5 p {
+  color: white;
+}
+
+.section-7 {
+  background-color: #F9BA00;
+  padding-top: 40px;
+}
+
+.section-7 p {
+  color: white;
+}
+
 /* ----------------------------------------
 CONTAINER
 ------------------------------------------- */
@@ -240,24 +356,23 @@ CONTAINER
   position: relative;
   background-color: #FAFAFA;
   height: 300px;
-  max-width: 100%;
+  width: 100%;
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
+  margin-left: 30px;
   transition: cubic-bezier(0.2, 0.8, 0.2, 1) 1.5s;
   z-index: 3;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
   background-color: #F9BA00;
+  position: absolute;
   height: 300px;
   width: 100%;
-  border-top-left-radius: 60px;
-  border-bottom-left-radius: 60px;
-  opacity: 0.8;
-  transform: translateX(100%);
+  top: 0%;
+  right: 0%;
   transition: cubic-bezier(0.2, 0.8, 0.2, 1) 2.0s;
+  transform: translateX(100%);
   z-index: 2;
 }
 
@@ -267,7 +382,7 @@ CONTAINER
   border-bottom-left-radius: 60px;
 }
 
-.container:hover h2 {
+.container:hover h1 {
   color: white;
   transition: 0.5s;
 }
@@ -278,55 +393,101 @@ CONTAINER
 }
 
 /* ----------------------------------------
-IMAGES
+ICON
 ------------------------------------------- */
-#tgf_laptop {
-  width: 50%;
+.icon {
   position: absolute;
-  display: inline-block;
-  right: 5%;
-  top: 90%;
+  top: 25%;
+  left: 0;
+  color: #F9BA00;
+  z-index: 6;
+}
+
+.icon-active {
+  align-self: flex-end;
+  animation-duration: 2.5s;
+}
+
+.icon-bounce {
+  animation-name: icon-bounce;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 }
 
 /* ----------------------------------------
-SECTION
+TEXT WRAPPER
 ------------------------------------------- */
-section h1,
-h2,
-h3,
-p,
-ul,
-ol {
-  font-weight: 300;
-  margin-left: 130px;
-}
-
-section p,
-ul,
-ol {
-  margin-right: 130px;
-}
-
-section h1 {
-  font-size: 20px;
-  margin-top: 140px;
-}
-
-section h2 {
-  font-size: 68px;
-  padding-top: 100px;
-}
-
-section h3 {
-  font-size: 40px;
-}
-
-.text-wrapper-1 {
-  z-index: 6000000;
+.text-wrapper {
+  position: relative;
+  text-align: left;
+  height: 300px;
+  width: 720px;
+  z-index: 6;
+  padding-top: 76px;
+  padding-left: 110px;
 }
 
 .text-wrapper-2 {
-  width: 700px;
+  width: 50%;
+}
+
+.text-wrapper-3 {
+  width: 50%;
+  position: absolute;
+  right: 6%;
+}
+
+.text-wrapper-4 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ----------------------------------------
+BUTTON (RIGHT ARROW)
+------------------------------------------- */
+button {
+  position: absolute;
+  top: 36%;
+  right: 14%;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  z-index: 50;
+}
+
+.arrow {
+  position: absolute;
+  right: 36%;
+  bottom: 30%;
+  z-index: 10;
+}
+
+.button-stroke {
+  stroke: #F9BA00;
+}
+
+.container:hover .button-stroke {
+  stroke: white;
+  transition: 1s;
+}
+
+.button-fill {
+  fill: black;
+}
+
+.arrow-wrapper:hover .button-stroke {
+  fill: white;
+  transition: cubic-bezier(0.2, 0.8, 0.2, 1) 1s;
+}
+
+.arrow-active {
+  align-self: flex-end;
+  animation-duration: 2.5s;
+}
+
+.arrow-bounce {
+  animation-name: arrow-bounce;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 }
 
 /* ----------------------------------------
@@ -345,6 +506,11 @@ RETURN TO TOP
   border-bottom: 3px solid #F9BA00;
 }
 
+.rtt {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
 /* ----------------------------------------
 FOOTER
 ------------------------------------------- */
@@ -354,12 +520,8 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: black;
+  margin-top: 100px;
   /* border-top-left-radius: 60px; */
-}
-
-footer p {
-  text-align: center;
-  margin-left: 0;
 }
 
 footer p {
@@ -379,3 +541,123 @@ footer p {
   color: white;
   transition: .5s;
 }
+
+/* ----------------------------------------
+ANIMATIONS
+------------------------------------------- */
+@keyframes icon-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  10% {
+    transform: scale(1.1, .9) translateY(0);
+  }
+
+  30% {
+    transform: scale(.9, 1.1) translateY(-5px);
+  }
+
+  50% {
+    transform: scale(1.05, .95) translateY(0);
+  }
+
+  57% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes arrow-bounce {
+  0% {
+    transform: scale(1, 1) translateX(0);
+  }
+
+  10% {
+    transform: scale(1, 1) translateX(0);
+  }
+
+  30% {
+    transform: scale(1, 1) translateX(12px);
+  }
+
+  50% {
+    transform: scale(1, 1) translateX(0);
+  }
+
+  57% {
+    transform: scale(1, 1) translateX(0px);
+  }
+
+  64% {
+    transform: scale(1, 1) translateX(0);
+  }
+
+  100% {
+    transform: scale(1, 1) translateX(0);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.15;
+  }
+}
+
+/* ----------------------------------------
+RESPONSIVE WEB
+------------------------------------------- */
+/* @media screen and (max-width: 1290px) {
+  .container {
+    height: 330px;
+    width: 100%;
+    background-color: purple;
+  }
+
+  .overlay {
+    height: 340px;
+  }
+
+  .tw-2to5 {
+    height: 340px;
+    margin-left: 14%;
+    padding-top: 26px;
+    padding-left: 278px;
+  }
+
+  button {
+    top: 40%;
+    right: 20%;
+  }
+} */

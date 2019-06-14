@@ -36,6 +36,11 @@ img {
   transition: 1s;
 }
 
+.container:hover .mobile-see-more a {
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+
 /* ----------------------------------------
 FADE-INS
 ------------------------------------------- */
@@ -444,6 +449,13 @@ footer p {
 }
 
 /* ----------------------------------------
+RESPONSIVE HIDE
+------------------------------------------- */
+.mobile-see-more {
+  display: none;
+}
+
+/* ----------------------------------------
 ANIMATIONS
 ------------------------------------------- */
 @keyframes icon-bounce {
@@ -539,26 +551,46 @@ ANIMATIONS
 /* ----------------------------------------
 RESPONSIVE WEB
 ------------------------------------------- */
-/* @media screen and (max-width: 1290px) {
-  .container {
-    height: 330px;
+@media screen and (max-width: 500px) {
+  .icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 50%;
+    color: #F9BA00;
+    z-index: 6;
+  }
+
+  .text-wrapper {
+    margin-left: 0%;
+    padding-left: 60px;
     width: 100%;
-    background-color: purple;
+    width: 400px;
+    padding-top: 20%;
+    padding-bottom: 15%;
   }
 
-  .overlay {
-    height: 340px;
+  section h1 {
+    font-size: 38px;
   }
 
-  .tw-2to5 {
-    height: 340px;
-    margin-left: 14%;
-    padding-top: 26px;
-    padding-left: 278px;
+  .arrow-wrapper {
+    display: none;
   }
 
-  button {
-    top: 40%;
-    right: 20%;
+  .mobile-see-more {
+    display: block;
   }
-} */
+
+  .mobile-see-more a {
+    border-bottom: 2px solid #F9BA00;
+  }
+
+  nav {
+    width: 68%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    padding-left: 4%;
+  }

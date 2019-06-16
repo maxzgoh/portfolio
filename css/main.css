@@ -378,9 +378,9 @@ DOWN ARROW
 .down-arrow-container {
   position: absolute;
   left: 48%;
-  width: 45px;
-  height: 45px;
-  margin: 50px auto;
+  /* width: 45px;
+  height: 45px; */
+  margin-top: 200px;
   z-index: 10000;
   transition: cubic-bezier(0.2, 0.8, 0.2, 1) 1s;
 }
@@ -553,6 +553,12 @@ ANIMATIONS
 /* ----------------------------------------
 RESPONSIVE WEB
 ------------------------------------------- */
+@media screen and (max-width: 1276px) {
+  #section-3-tw p {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 1182px) {
   .arrow-wrapper {
     display: none;

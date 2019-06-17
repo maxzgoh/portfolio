@@ -706,8 +706,12 @@ RESPONSIVE WEB
 
 @media screen and (max-width: 486px) {
   .text-wrapper {
-    padding-left: 40px;
+    padding-left: 50px;
     width: 280px;
+  }
+
+  .icon {
+    left: 19%;
   }
 
   #section-1-tw {

@@ -555,7 +555,7 @@ RESPONSIVE WEB
 ------------------------------------------- */
 @media screen and (max-width: 1276px) {
   #section-3-tw p {
-    width: 60%;
+    width: 110%;
   }
 }
 
@@ -575,9 +575,97 @@ RESPONSIVE WEB
   #section-2-tw, #section-3-tw, #section-4-tw, #section-5-tw {
     padding-top: 56px;
   }
+
+  #section-3-tw {
+    padding-top: 39px;
+  }
+
+  .text-wrapper {
+    padding-left: 230px;
+  }
 }
 
-@media screen and (max-width: 1126px) {}
+@media screen and (max-width: 997px) {
+  #section-1-tw {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 898px) {
+  #section-4-tw {
+    padding-top: 22px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  #section-4-tw {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  #section-2-tw {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  #section-1-tw {
+    padding-top: 1px;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  #section-2-tw {
+    padding-top: 12px;
+  }
+}
+
+@media screen and (max-width: 727px) {
+  #section-3-tw {
+    padding-top: 9px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  #section-5-tw {
+    padding-top: 19px;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  #section-3-tw {
+    padding-top: 1px;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 50%;
+  }
+
+  .text-wrapper {
+    margin-left: 0%;
+    padding-left: 60px;
+    width: 100%;
+    width: 400px;
+    padding-top: 50%;
+    padding-bottom: 15%;
+  }
+
+  #section-1-tw, #section-2-tw, #section-3-tw, #section-4-tw, #section-5-tw {
+    padding-top: 93px;
+  }
+
+  section h1 {
+    font-size: 38px;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .icon {

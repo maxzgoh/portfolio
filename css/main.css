@@ -702,3 +702,27 @@ RESPONSIVE WEB
     padding-bottom: 50%;
     padding-left: 4%;
   }
+}
+
+@media screen and (max-width: 486px) {
+  .text-wrapper {
+    padding-left: 40px;
+    width: 269px;
+  }
+
+  #section-1-tw {
+    padding-top: 78px;
+  }
+
+  #section-1-tw .icon {
+    top: 12%;
+  }
+
+  #section-4-tw {
+    padding-top: 62px;
+  }
+
+  #section-4-tw .icon {
+    top: 9%;
+  }
+}

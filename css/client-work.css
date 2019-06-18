@@ -102,25 +102,35 @@ TYPOGRAPHY
 IMAGES
 ------------------------------------------- */
 #tgf_laptop {
-  margin-top: 14%;
+  margin-top: 66px;
 }
 
-#tgf_iphone {
-  position: absolute;
-  width: 8%;
-  right: 19%;
-  top: 175%;
+#tgf_laptop2 {
+  display: none;
+  margin-top: 66px;
 }
 
 #tgf_ca {
   border: 10px solid white;
-  width: 90%;
+  width: 100%;
   margin-top: 4%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+#tgf_ca2 {
+  border: 10px solid white;
+  width: 100%;
+  margin-top: 4%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: none;
 }
 
 #tgf_sitemap, #tgf_flowchart {
@@ -140,7 +150,7 @@ IMAGES
 }
 
 .wireframes img, .hi-fi img, .hi-fi-b img {
-  border: 10px solid white;
+  border: 6px solid white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -491,7 +501,7 @@ COLUMNS
 .column-3, .column-4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5%;
+  grid-column-gap: 6%;
 }
 
 /* ----------------------------------------
@@ -694,6 +704,60 @@ ANIMATIONS
 /* ----------------------------------------
 RESPONSIVE WEB
 ------------------------------------------- */
+@media screen and (max-width: 1537px) {
+  #tgf_laptop {
+    margin-top: 86px;
+    transition: 1s;
+  }
+}
+
+@media screen and (max-width: 1437px) {
+  .column-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: 1s;
+  }
+
+  #tgf_ca {
+    display: none;
+  }
+
+  #tgf_ca2 {
+    display: block;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .column-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: 1s;
+  }
+
+  #tgf_laptop2 {
+    display: block;
+  }
+
+  #tgf_laptop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .wireframes, .hi-fi, .hi-fi-b {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4%;
+    grid-row-gap: 5%;
+    margin-bottom: 12%;
+  }
+
+  .wireframes, .hi-fi, .hi-fi-b {
+    margin-top: 8%;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .text-wrapper {
     padding-top: 54px;
@@ -707,6 +771,13 @@ RESPONSIVE WEB
 
   .title {
     left: 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column-4 {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 

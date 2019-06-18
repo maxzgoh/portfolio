@@ -268,11 +268,11 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  padding-top: 15%;
-  padding-bottom: 15%;
   padding-left: 8%;
   transition: all cubic-bezier(0.2, 0.8, 0.2, 1) 1.2s;
   z-index: 90;
+  display: flex;
+  align-items: center;
 }
 
 nav a {
@@ -707,6 +707,15 @@ RESPONSIVE WEB
 
   .title {
     left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    width: 80%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    padding-left: 4%;
   }
 }
 

@@ -711,6 +711,7 @@ RESPONSIVE WEB
   }
 
   .icon {
+    position: absolute;
     left: 19%;
   }
 
@@ -728,5 +729,9 @@ RESPONSIVE WEB
 
   #section-4-tw .icon {
     top: 9%;
+  }
+
+  nav {
+    width: 80%;
   }
 }

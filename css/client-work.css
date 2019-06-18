@@ -343,9 +343,10 @@ section h1 {
 
 .title {
   position: absolute;
+  margin-left: 30px;
   font-size: 22px;
   top: 20%;
-  left: 142px;
+  left: 8%;
 }
 
 section p {
@@ -471,10 +472,11 @@ TEXT WRAPPER
   position: relative;
   text-align: left;
   height: 300px;
-  width: 640px;
+  width: 90%;
   z-index: 6;
+  margin-right: 14%;
   padding-top: 76px;
-  padding-left: 110px;
+  padding-left: 8%;
 }
 
 /* ----------------------------------------
@@ -692,26 +694,47 @@ ANIMATIONS
 /* ----------------------------------------
 RESPONSIVE WEB
 ------------------------------------------- */
-/* @media screen and (max-width: 1290px) {
-  .container {
-    height: 330px;
-    width: 100%;
-    background-color: purple;
+@media screen and (max-width: 980px) {
+  .text-wrapper {
+    padding-top: 54px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .text-wrapper {
+    padding-left: 60px;
   }
 
-  .overlay {
-    height: 340px;
+  .title {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  #section-1-tw h1 {
+    font-size: 38px;
   }
 
-  .tw-2to5 {
-    height: 340px;
-    margin-left: 14%;
-    padding-top: 26px;
-    padding-left: 278px;
+  .text-wrapper {
+    padding-top: 62px;
+    width: 80%;
   }
+}
 
-  button {
-    top: 40%;
-    right: 20%;
+@media screen and (max-width: 424px) {
+  .text-wrapper {
+    padding-top: 29px;
   }
-} */
+}
+
+@media screen and (max-width: 380px) {
+  .text-wrapper {
+    padding-top: 19px;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .text-wrapper {
+    padding-top: 9px;
+  }
+}

@@ -756,6 +756,10 @@ RESPONSIVE WEB
   .wireframes, .hi-fi, .hi-fi-b {
     margin-top: 8%;
   }
+
+  #tgf_ca2 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 980px) {

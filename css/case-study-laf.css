@@ -52,6 +52,7 @@ TYPOGRAPHY
 .sections h1,
 .sections h2,
 .sections h3,
+.sections h4,
 .sections ul,
 .sections p,
 .sections ol {
@@ -533,6 +534,13 @@ COLUMNS
 .column-4b {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+  margin-bottom: 3%;
+}
+
+.column-6a, .column-6b, .column-6c, .column-6d {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 5%;
   margin-bottom: 3%;
 }

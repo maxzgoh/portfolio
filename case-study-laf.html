@@ -73,7 +73,7 @@
         <h3>Scope<span class="yellow-period">.</span></h3>
         <p>The primary goal with their app is improve the overall gym experience by reducing the friction for members to access clubs and gym information.</p>
         <p>As someone who exercises regularly at LA Fitness, I decided to set out and uncover the pain points behind the mobile app, and find any potential drop-offs where there could be opportunity.</p>
-        <p>I will be focused on the users' access to
+        <p>I focused on the users' access to
           membership cards, class reservations, cancelations, and discoverability of local gyms and class schedules.</p>
       </div>
       <div class="column-2-right">
@@ -83,10 +83,42 @@
   </section>
   <!-- SECTION 3 -->
   <section class="section-3 sections">
+    <h3>User Research<span class="white-period">.</span></h3>
+    <h4>App Store Reviews<span class="white-period">.</span></h4>
+    <p>First, I went to the App Store to see the reviews of the current LA Fitness app too get a better sense of how people are feeling about their experience with it.</p>
+    <img id="laf_appstorereviews" src="img/laf_appstorereviews.png" alt="laf_appstorereviews">
+    <p>With an overall rating of 2.3 out of 5 with 1,259 reviews, the app seems to have a long way to go in terms of pleasing its users.</p>
+    <div class="column-3-critiques">
+      <div>
+        <p>"My issue - and it is not small IMHO - is how unbelievably terrible the reserve a fitness class part is. Classes are basically never available 24 hours in advance. Somtimes it gives you a blue link to register that actually does nothing."
+          <p>-indygreg</p>
+        </p>
+      </div>
+      <div>
+        <p>"I added favorite classes but it looks like it doesn't actually do anything but highlight them in the list."<p>- KKDro</p>
+        </p>
+      </div>
+      <div>
+        <p>"My biggest complaint is that I go to the same location every day. WHen I want to look up the class schedule for my location I have to choose it from a map or list. It should allow me to set a default location that comes up and shows the
+          class
+          list."<p>- Boxer Lola</p>
+        </p>
+      </div>
+      <div>
+        <p>"This app has the most outdated UI choice and I think the menus should be revamped."<p>- CritiqueMemester</p>
+        </p>
+      </div>
+      <div>
+        <p>"The user interface is convoluted and unnecessarily difficult. Searching for your location is a laborious process. It's ugly."<p>- Electronicchild</p>
+        </p>
+      </div>
+    </div>
+    <p>The main issues from current users appear to be around reserving and favoriting classes, not being able to set default location, search funcationality, and the "convoluted" user interface.</p>
+    <p>With this feedback in mind, I decided to also conduct a usability test to confirm and uncover the pain points that exist in the app.</p>
     <div class="column-3">
       <div>
-        <h3>User Research<span class="white-period">.</span></h3>
-        <p>I conducted user research on participants who had never used the app before and had them do simple tasks:</p>
+        <h4>Usability Test<span class="white-period">.</span></h4>
+        <p>The usability tests were conducted on participants who had never used the app before, and I had them do simple tasks:</p>
         <ol>
           <li>
             <strong>Access</strong> membership card
@@ -109,7 +141,7 @@
           </ul>
       </div>
       <div>
-        <h3>Results<span class="white-period">.</span></h3>
+        <h4>Results<span class="white-period">.</span></h4>
         <p>Below are the main takeaways from the research:</p>
         <ul>
           <li><strong>6 / 10</strong> did not locate the membership card icon on the homepage at a glance</li>
@@ -123,38 +155,61 @@
   <!-- SECTION 4 -->
   <section class="section-4 sections">
     <h3>The Process<span class="yellow-period">.</span></h3>
-    <p>After reviewing each participant’s experience with the app, I proceeded by:</p>
-    <ol>
-      <li>Identifying the frustrations</li>
-      <li>Prioritizing the issues to be tackled</li>
-      <li>Mapping out the user flow when it came to searching, reserving, and favoriting a class</li>
-    </ol>
-    <p>This helped me get a better sense of where along the flow there were problems and if there was any relationship between them.</p>
-
-    <h3>User Pain Points<span class="yellow-period">.</span></h3>
-    <p>As the research results inferred, there were several issues involving the membership card, favoriting, and reservations.</p>
-    <ul>
-      <li><strong>Accessing Membership Card</strong>: Users were unable to find the membership card icon at a glance on the home screen of the app.</li>
-      <li><strong>Favoriting Gyms and Classes</strong>: There was difficulty in figuring out how to add a gym and/or class to their favorites as the call-to-action is currently unclear.</li>
-      <li><strong>Making Reservations</strong>: Some users tapped on the “Reserve Now” text in the class list believing that it would sign them up for the class; however, they realized that they had to officially reserve a spot in the Class Details
-        section.
-      </li>
-      <li><strong>Canceling Reservations</strong>: Some users had trouble finding the class reservation page from the homepage, which made it difficult for them to cancel reservations.</li>
-    </ul>
+    <p>After reviewing each participant’s experience with the app, I proceeded by identifying the frustrations, and creating the user flow when it came to searching, reserving, and favoriting a class. This helped me get a better sense of where along
+      the flow there were problems and if there was any relationship between them.</p>
+    <h4>User Pain Points<span class="yellow-period">.</span></h4>
+    <p>As the research results inferred, there were several issues involving the following:</p>
+    <div class="column-4a">
+      <div>
+        <p><span class="black-bold"><strong>Accessing Membership Card</strong></span>:</p>
+        <p>Users were unable to find the membership card icon at a glance on the home screen of the app. The order of the bottons do not seem like they are in any particular
+          order. It is difficult to find the membership card at a glance due to the arrangement of the buttons. When entering the gym, users may take more time to access their membership card, which slows down the check-in process.</p>
+      </div>
+      <div>
+        <img id="laf_membershipcard" src="img/laf_membershipcard.png" alt="laf_membershipcard">
+      </div>
+      <div>
+        <p><span class="black-bold"><strong>Favoriting Gyms and Classes</strong></span>:</p>
+        <p>There was difficulty in figuring out how to add a gym and/or class to their favorites as the call-to-action is currently unclear. In order to favorite the gym/club, the user must tap on the heart icon; hoever, the users may not be able to
+          recognize that this icon is the action to favorite the club because it is aligned with unactionable icons.</p>
+      </div>
+      <div>
+        <img id="laf_clubdetails" src="img/laf_clubdetails.png" alt="laf_laf_clubdetails">
+      </div>
+    </div>
+    <div class="column-4b">
+      <div>
+        <p><span class="black-bold"><strong>Making Reservations</strong></span>:</p>
+        <p>Some users tapped on the “Reserve Now” text in the class list believing that it would sign them up for the class; however, they realized that they had to officially reserve a spot in the Class Details section. The users are unable to view
+          availability of open spots, and reserve a spot in the list view.</p>
+      </div>
+      <div>
+        <img id="laf_reservation" src="img/laf_reservation.png" alt="laf_reservation">
+      </div>
+      <div>
+        <p><span class="black-bold"><strong>Canceling Reservations</strong></span>:</p>
+        <p>Some users had trouble finding the class reservation page from the homepage, which made it difficult for them to cancel reservations. After the user reserves a spot for class, the reservation icon appears on the top right of the home
+          screen. Although the app highlights the new icon after reserving a spot, the message is only shown once. Thus, users may not be aware of the change, which makes it difficult for them to cancel their spot.</p>
+      </div>
+      <div>
+        <img id="laf_cancelation" src="img/laf_cancelation.png" alt="laf_cancelation">
+      </div>
+    </div>
   </section>
   <!-- SECTION 5 -->
   <section class="section-5 sections">
     <div class="column-5">
       <div>
         <h3>User Flow<span class="white-period">.</span></h3>
+        <p></p>
         <div class="subcolumn-5">
           <div>
-            <p><strong>Before</strong></p>
+            <h4>Before<span class="white-period">.</span></h4>
             <p>I mapped out the current user flow to pinpoint the issues from searching for classes and gyms to attending the reserved session. This clarifies where the issues occur during the process.</p>
             <img id="laf_current-uf" src="img/laf_current-uf.jpg" alt="laf_current-uf">
           </div>
           <div>
-            <p><strong>After</strong></p>
+            <h4>After<span class="white-period">.</span></h4>
             <p>After noting the pain points, I redesigned the user flow with solutions along with the introduction of saving a primary gym location for make the process simpler for the next use.</p>
             <img id="laf_new-uf" src="img/laf_new-uf.jpg" alt="laf_new-uf">
           </div>

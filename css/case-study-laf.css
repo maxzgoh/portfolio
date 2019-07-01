@@ -24,6 +24,11 @@ p, ul, ol, li {
   color: #999999;
 }
 
+h4 {
+  font-family: 'Vidaloka', serif;
+  color: black;
+}
+
 img {
   max-width: 100%;
 }
@@ -68,6 +73,12 @@ TYPOGRAPHY
   margin-bottom: 32px;
 }
 
+.sections h4 {
+  font-size: 28px;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
 #section-2 {
   padding-top: 50px;
 }
@@ -98,72 +109,22 @@ TYPOGRAPHY
   margin-bottom: 4%;
 }
 
-.black-text p {
+.black-text p, .black-bold {
   color: black;
 }
 
 /* ----------------------------------------
 IMAGES
 ------------------------------------------- */
-#dhs_mock-all {
-  margin-top: 7%;
-}
-
 #lafitness_artboard02 {
   display: none;
   margin-top: 7%;
 }
 
-#dhs_imac {
-  margin-top: 7%;
-}
-
-#dhs_ipad {
-  position: absolute;
-  width: 18%;
-  right: 38%;
-  top: 175%;
-}
-
-#dhs_iphone {
-  position: absolute;
-  width: 8%;
-  right: 19%;
-  top: 190%;
-}
-
-#dhs_site-map {
-  border: 6px solid white;
-  width: 90%;
-  margin-top: 4%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-#tgf_sitemap, #tgf_flowchart {
-  margin-top: 5%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07), 0 6px 6px rgba(0, 0, 0, 0.07);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-#dhs_red-lining01 {
-  border: 6px solid white;
+#laf_membershipcard, #laf_clubdetails, #laf_reservation, #laf_cancelation {
   width: 100%;
-  margin-top: 4%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-#dhs_wf_desktop_01, #dhs_wf_desktop_02, #dhs_wf_desktop_03 {
+  margin-top: 2%;
+  margin-bottom: 2%;
   border: 6px solid white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -172,24 +133,9 @@ IMAGES
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07), 0 6px 6px rgba(0, 0, 0, 0.07);
 }
 
-#dhs_wf_mobile01, #dhs_wf_mobile02, #dhs_wf_mobile03, #dhs_wf_mobile04,
-#dhs_wf_tablet01, #dhs_wf_tablet02, #dhs_wf_tablet03, #dhs_wf_tablet04,
-#dhs_hf_desktop01, #dhs_hf_desktop02, #dhs_hf_desktop03, #dhs_hf_desktop04,
-#dhs_hf_mobile01, #dhs_hf_mobile02, #dhs_hf_mobile03, #dhs_hf_mobile04 {
-  border: 6px solid white;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07), 0 6px 6px rgba(0, 0, 0, 0.07);
-}
-
-#dhs_wf_mobile01, #dhs_wf_mobile04 {
-  width: 40%;
-}
-
-#dhs_utp {
-  margin-top: 4%;
+#laf_appstorereviews {
+  margin-top: 2%;
+  margin-bottom: 2%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -571,16 +517,24 @@ COLUMNS
   grid-column-gap: 5%;
 }
 
-.column-4a {
+.column-3-critiques {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 5%;
 }
 
-.column-4b, .column-4c, .column-7a, .column-7b {
+.column-4a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 5%;
+  margin-bottom: 3%;
+}
+
+.column-4b {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+  margin-bottom: 3%;
 }
 
 .subcolumn-5 {

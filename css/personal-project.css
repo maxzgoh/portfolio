@@ -437,6 +437,12 @@ footer p {
   text-align: center;
 }
 
+.footer-p {
+  color: #999999;
+  text-align: center;
+  font-size: 12px;
+}
+
 .social-links a {
   font-size: 30px;
   display: flex;

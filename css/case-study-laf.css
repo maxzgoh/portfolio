@@ -134,6 +134,16 @@ IMAGES
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07), 0 6px 6px rgba(0, 0, 0, 0.07);
 }
 
+.final-mocks {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 #laf_appstorereviews {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -151,10 +161,6 @@ IMAGES
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07), 0 6px 6px rgba(0, 0, 0, 0.07);
-}
-
-#dhs_sg2 {
-  display: none;
 }
 
 #lafitness_artboard01, #lafitness_artboard02 {
@@ -531,7 +537,7 @@ COLUMNS
   margin-bottom: 3%;
 }
 
-.column-4b {
+.column-4b, .column-4c {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 5%;

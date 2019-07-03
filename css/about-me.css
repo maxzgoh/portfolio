@@ -705,13 +705,13 @@ RESPONSIVE WEB
   .section-2 p,
   .section-2 ol {
     font-weight: 300;
-    margin-left: 80px;
+    margin-left: 60px;
   }
 
   #it-me {
     width: 220px;
     margin-top: 48px;
-    margin-left: 18%;
+    margin-left: 15%;
     margin-bottom: 4.7%;
   }
 
@@ -743,7 +743,7 @@ RESPONSIVE WEB
 
   #it-me2 {
     display: block;
-    margin-left: 80px;
+    margin-left: 60px;
     width: 220px;
     margin-right: 10%;
   }

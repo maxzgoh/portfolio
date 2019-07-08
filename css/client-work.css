@@ -738,7 +738,7 @@ ANIMATIONS
 /* ----------------------------------------
 RESPONSIVE WEB
 ------------------------------------------- */
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 20000px) {
   .column-2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -747,6 +747,12 @@ RESPONSIVE WEB
 
   #tgf_laptop2 {
     display: block;
+    width: 75%;
+  }
+
+  .center-img {
+    display: flex;
+    justify-content: center;
   }
 
   #tgf_laptop {

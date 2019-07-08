@@ -791,6 +791,23 @@ RESPONSIVE WEB
 }
 
 @media screen and (max-width: 800px) {
+  .hi-fi-p {
+    display: none;
+  }
+
+  .hi-fi {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0%;
+    grid-row-gap: 0%;
+    margin-bottom: 0%;
+  }
+
+  .hide-p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .text-wrapper {
     padding-left: 60px;
   }

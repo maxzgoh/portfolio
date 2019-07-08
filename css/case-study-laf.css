@@ -809,3 +809,12 @@ RESPONSIVE WEB
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 500px) {
+  nav {
+    width: 80%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    padding-left: 4%;
+  }
+}

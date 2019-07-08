@@ -738,28 +738,6 @@ ANIMATIONS
 /* ----------------------------------------
 RESPONSIVE WEB
 ------------------------------------------- */
-@media screen and (max-width: 20000px) {
-  .column-2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    transition: 1s;
-  }
-
-  #tgf_laptop2 {
-    display: block;
-    width: 75%;
-  }
-
-  .center-img {
-    display: flex;
-    justify-content: center;
-  }
-
-  #tgf_laptop {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1537px) {
   #tgf_laptop {
     margin-top: 86px;
@@ -781,6 +759,22 @@ RESPONSIVE WEB
   #tgf_ca2 {
     display: block;
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .column-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: 1s;
+  }
+
+  #tgf_laptop2 {
+    display: block;
+  }
+
+  #tgf_laptop {
+    display: none;
   }
 }
 

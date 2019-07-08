@@ -638,6 +638,14 @@ i {
 }
 
 /* ----------------------------------------
+IFRAME
+------------------------------------------- */
+iframe {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----------------------------------------
 FOOTER
 ------------------------------------------- */
 footer {
@@ -784,113 +792,20 @@ RESPONSIVE WEB
   }
 }
 
-@media screen and (max-width: 1178px) {
-  .column-5 {
+@media screen and (max-width: 1148px) {
+  .column-4a, .column-4b, .column-4c {
     grid-template-columns: 1fr;
   }
 }
 
-@media screen and (max-width: 998px) {
-  .column-6 {
-    grid-template-columns: 1fr;
-  }
-
-  #dhs_sg {
-    display: none;
-  }
-
-  #dhs_sg2 {
-    margin-top: 5%;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 963px) {
-  .column-3 {
+@media screen and (max-width: 940px) {
+  .column-3-critiques {
     grid-template-columns: 1fr;
   }
 }
 
-@media screen and (max-width: 960px) {
-  .text-wrapper {
-    padding-top: 38px;
-  }
-}
-
-@media screen and (max-width: 808px) {
-  .text-wrapper {
-    padding-top: 30px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .text-wrapper {
-    padding-left: 60px;
-  }
-
-  .title {
-    left: 60px;
-  }
-}
-
-@media screen and (max-width: 737px) {
-  .column-7a, .column-7b {
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 2%;
-    margin-bottom: 4%;
-  }
-}
-
-@media screen and (max-width: 582px) {
-  .text-wrapper {
-    padding-top: 50px;
-  }
-
-  #section-1-tw h1 {
-    font-size: 38px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  nav {
-    width: 80%;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    padding-left: 4%;
-  }
-}
-
-@media screen and (max-width: 469px) {
-  .text-wrapper {
-    padding-top: 18px;
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 431px) {
-  .text-wrapper {
-    padding-top: 8px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  #section-1-tw h1 {
-    font-size: 29px;
-  }
-
-  .text-wrapper {
-    padding-top: 29px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .text-wrapper {
-    padding-top: 20px;
-  }
-}
-
-@media screen and (max-width: 324px) {
-  .text-wrapper {
-    width: 83%;
+@media screen and (max-width: 760px) {
+  .column-3, .subcolumn-5 {
+    grid-template-columns: 1fr;
   }
 }

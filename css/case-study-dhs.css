@@ -13,7 +13,7 @@ html {
 }
 
 body,
-.rrt-link {
+.rrt-link, #top {
   -webkit-font-smoothing: antialiased;
   font-family: 'Vidaloka', serif;
   color: black;
@@ -53,6 +53,12 @@ h4 {
 .links {
   font-family: 'Assistant', sans-serif;
   color: #999999;
+}
+
+.underline {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Vidaloka', serif;
+  color: white;
 }
 
 /* ----------------------------------------
